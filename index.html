@@ -3,44 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Оставь мир позади (2024)</title>
+  <title>Оставь мир позади</title>
+
+  <!-- SEO-описание -->
+  <meta name="description" content="Семейная четвёрка отправляется в загородный дом, но их отдых нарушают тревожные события. Исчезает связь, на пороге появляются незваные гости, и никто не понимает, что происходит.">
+
+  <!-- Open Graph (для соцсетей и мессенджеров) -->
+  <meta property="og:title" content="Оставь мир позади" />
+  <meta property="og:description" content="Семейная четвёрка отправляется в загородный дом, но их отдых нарушают тревожные события. Исчезает связь, на пороге появляются незваные гости, и никто не понимает, что происходит." />
+  <meta property="og:image" content="https://i.postimg.cc/zGsD2gZB/2024.jpg" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://твоя-ссылка-на-сайт" />
+
+  <!-- Favicon (по желанию) -->
+  <link rel="icon" href="https://i.postimg.cc/zGsD2gZB/2024.jpg" />
+
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       background: #000;
-      color: #fff;
-      font-family: sans-serif;
-    }
-
-    .container {
+      width: 100%;
+      height: 100%;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      padding: 20px;
-    }
-
-    .info-section {
-      display: flex;
-      max-width: 960px;
-      margin-bottom: 20px;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .poster {
-      max-width: 300px;
-      width: 100%;
-    }
-
-    .poster img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .description {
-      flex: 1;
-      min-width: 250px;
     }
 
     .player-container {
@@ -57,26 +44,8 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="info-section">
-      <div class="poster">
-        <img src="https://i.postimg.cc/zGsD2gZB/2024.jpg" alt="Обложка фильма">
-      </div>
-      <div class="description">
-        <h1>Оставь мир позади</h1>
-        <h2>Описание фильма:</h2>
-        <p>
-          Семейная четвёрка решает провести выходные в роскошном доме с бассейном на берегу моря недалеко от Нью-Йорка.
-          Однако их расслабленный отдых нарушают странные события: мощный танкер врезается прямо в пляж, пропадает мобильная связь и интернет,
-          телевидение отказывает, а посередине ночи на пороге появляются хозяин дома с дочерью, просившие разрешения на ночлег из-за массового отключения
-          электроэнергии в Нью-Йорке. Явно что-то не так, но никто не может понять, что именно.
-        </p>
-      </div>
-    </div>
-
-    <div class="player-container">
-      <div id="player"></div>
-    </div>
+  <div class="player-container">
+    <div id="player"></div>
   </div>
 
   <script src="playerjs.js"></script>
